@@ -1,98 +1,163 @@
 # -*- coding: utf-8 -*-
 """
-##################################################
-#
-# ECP 3004: Python for Business Analytics
-#
-# Name: 
-#
-# Date:
-# 
-##################################################
-#
-# Sample Script for Assignment 2: 
-# Function Definitions
-#
-##################################################
+Created on Sun Jan 31 11:48:19 2021
+
+@author: Hadis
 """
 
+#Example 1 question
+#defining average function
+def average(a,b):
+    return (a+b)/2
+#taking 2 numbers as input
+x=float(input("Enter first number"))
+y=float(input("Enter second number"))
 
-##################################################
-# Import Required Modules
-##################################################
+print("The average is", average(x,y))
 
-# import name_of_module
+def average(a,b):
+    return (a+b)/2
+#taking 2 numbers as input
+x=float(input("Enter first number"))
+y=float(input("Enter second number"))
 
+print("The average is", average(x,y))
 
-##################################################
-# Function Definitions
-##################################################
+def average(a,b):
+    return (a+b)/2
+#taking 2 numbers as input
+x=float(input("Enter first number"))
+y=float(input("Enter second number"))
 
-# Exercise 1
-
-def average(num1: float, num2: float) -> float:
-    """Return the average of num1 and num2.
-
-    >>> average(10,20)
-    15.0
-    >>> average(2.5, 3.0)
-    2.75
-    """
-
-    return num1 + num2 / 2
-
-
-
-# Define the rest of your functions for Exercises 2-6.
- 
+print("The average is", average(x,y))
 
 
 
+#Example 2 question
+import math
+#defining area_of_circle funtion
+def area_of_circle(r):
+    return((math.pi)*r*r)
+#taking radius of circle as input
+radius=float(input("Enter radius of a circle"))
+print("The area of circle is", area_of_circle(radius))
+
+import math
+#defining area_of_circle funtion
+def area_of_circle(r):
+    return((math.pi)*r*r)
+#taking radius of circle as input
+radius=float(input("Enter radius of a circle"))
+print("The area of circle is", area_of_circle(radius))
+
+import math
+#defining area_of_circle funtion
+def area_of_circle(r):
+    return((math.pi)*r*r)
+#taking radius of circle as input
+radius=float(input("Enter radius of a circle"))
+print("The area of circle is", area_of_circle(radius))
 
 
+#Example 3 question
+import math
+#defining area_of_circle(r) function
+def area_of_circle(r):
+    return((math.pi)*r*r)
+#taking radius of circle as input
+radius=float(input("Enter radius of a circle at base of cylinder"))
+height=float(input("Enter height of cylinder"))
 
-##################################################
-# Run the examples to test these functions
-##################################################
+area=area_of_circle(radius);
+print("Volume of Cylinder is", area*height)
+
+import math
+#defining area_of_circle(r) function
+def area_of_circle(r):
+    return((math.pi)*r*r)
+#taking radius of circle as input
+radius=float(input("Enter radius of a circle at base of cylinder"))
+height=float(input("Enter height of cylinder"))
+
+area=area_of_circle(radius);
+print("Volume of Cylinder is", area*height)
+import math
+#defining area_of_circle(r) function
+def area_of_circle(r):
+    return((math.pi)*r*r)
+#taking radius of circle as input
+radius=float(input("Enter radius of a circle at base of cylinder"))
+height=float(input("Enter height of cylinder"))
+
+area=area_of_circle(radius);
+print("Volume of Cylinder is", area*height)
+
+#Example 4 question
+import math 
+#defining Cobb-Douglass utility function
+def utility(x,y,alpha):
+ return((x**alpha)*y**(1-alpha))
+#taking input
+x1=float(input("Enter value of x "))
+y1=float(input("Enter value of y "))
+gamma=float(input("Enter gamma value "))
+print("The value of Cobb-Douglass utility is ",utility(x1,y1,gamma))
+
+import math 
+#defining Cobb-Douglass utility function
+def utility(x,y,alpha):
+ return((x**alpha)*y**(1-alpha))
+#taking input
+x1=float(input("Enter value of x "))
+y1=float(input("Enter value of y "))
+gamma=float(input("Enter gamma value "))
+print("The value of Cobb-Douglass utility is ",utility(x1,y1,gamma))
+
+import math 
+#defining Cobb-Douglass utility function
+def utility(x,y,alpha):
+ return((x**alpha)*y**(1-alpha))
+#taking input
+x1=float(input("Enter value of x "))
+y1=float(input("Enter value of y "))
+gamma=float(input("Enter gamma value "))
+print("The value of Cobb-Douglass utility is ",utility(x1,y1,gamma))
 
 
-# Test the examples and print the results. 
+#Example 5 Question
+import math
+#defining logit link function
+
+def logit(x,b0,b1):
+ return (math.exp(b0+(x*b1))/(1+math.exp(b0+(x*b1))))
+#taking input
+x1=float(input("Enter value of x "))
+b0=float(input("Enter value of b0 "))
+b1=float(input("Enter value of b1 "))
+print("The value of logit link function is ",logit(x1,b0,b1))
+
+import math
+#defining logit link function
+
+def logit(x,b0,b1):
+ return (math.exp(b0+(x*b1))/(1+math.exp(b0+(x*b1))))
+#taking input
+x1=float(input("Enter value of x "))
+b0=float(input("Enter value of b0 "))
+b1=float(input("Enter value of b1 "))
+print("The value of logit link function is ",logit(x1,b0,b1))
 
 
-print("#" + 50*"-")
-print("Testing my Examples for Exercise 1.")
+import math
+#defining logit link function
 
-print("#" + 50*"-")
-print("Exercise 1, Example 1:")
-print("Evaluating average(10,20)")
-print("Expected: " + str(15.0))
-print("Got: " + str(average(10,20)))
+def logit(x,b0,b1):
+ return (math.exp(b0+(x*b1))/(1+math.exp(b0+(x*b1))))
+#taking input
+x1=float(input("Enter value of x "))
+b0=float(input("Enter value of b0 "))
+b1=float(input("Enter value of b1 "))
+print("The value of logit link function is ",logit(x1,b0,b1))
 
+#END
 
-print("#" + 50*"-")
-print("Exercise 1, Example 2:")
-print("Evaluating average(2.5, 3.0)")
-print("Expected: " + str(2.75))
-print("Got: " + str(average(2.5, 3.0)))
-
-
-print("#" + 50*"-")
-print("Exercise 1, Example 3:")
-# ...
-
-print("#" + 50*"-")
-print("Testing my Examples for Exercise 2.")
-
-
-# ...
-
-# Continue with the rest of your examples.
-# Test all functions with three examples each. 
-
-# Choose good examples that will test interesting cases. 
-# Make sure they all work correctly. 
-
-
-##################################################
-# End
-##################################################
